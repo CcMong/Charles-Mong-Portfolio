@@ -1,5 +1,8 @@
+/*GENERAL
+===========*/
+
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /*To keep width to 100% without overrunning*/
 }
 
 body {
@@ -21,3 +24,64 @@ h6 {
 p {
   margin: 0;
 }
+
+/*Colour variables defined*/
+
+:root {
+  --backgrColour: darkslategray;
+  --headerText: cyan;
+}
+
+/*HEADER AND NAVIGATION BAR
+============================*/
+
+nav {
+    background-color:var(--backgrColour);
+}
+
+.navigation a {
+  text-decoration: none; /*Gets rid of the underline in the links*/
+  display: block;
+  padding: 0px 8px 0px 8px;
+  margin-right: 7px;
+  color: var(--headerText);
+  border-bottom: 2px solid var(--headerText);
+  position: relative;
+  top: -25px;
+}
+
+.navigation a:hover {
+  background: slategray;
+}
+
+.navigation li:last-of-type a {
+  margin-right: 50px;
+}
+
+h1 {
+  display: inline;
+  padding: 0.1em 0.4em 0.1em 2em;
+  background-color: var(--headerText);
+  color: var(--backgrColour);
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+}
+
+/*For large screen size*/
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap; 
+  list-style-type: none; /*Get rid of bullet points*/
+  justify-content: flex-end; /*Push the links to the far right*/
+  align-content: center;
+}
+
+/*For medium screen size*/
+
+/*For small screen size*/
+
+
+
+

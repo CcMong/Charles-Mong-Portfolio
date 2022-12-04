@@ -35,62 +35,43 @@ p {
 /*HEADER AND NAVIGATION BAR
 ============================*/
 
-#navBar {
-    background-color:var(--backgrColour);
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0px;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /*Vertically aligns*/
+  /*padding: 10px 50px;*/
+  box-shadow: 0 1px 8px #ddd;
+  background: var(--backgrColour);
 }
 
-h1 {
-  display: inline;
-  padding: 0.1em 0.4em 0.1em 2em;
-  background-color: var(--headerText);
+#nav-heading {
+  margin-right: auto; /*Moves the heading to the left*/
+  font-size: 2em;
+  padding: 0 10px 0 50px;
   color: var(--backgrColour);
-  width: 25%;
-  font-size: 35px;
-  /*position: relative;*/
-  top: 30px;
-  /*font-size: 30px;
-  position: relative;
-  top: 20px;*/
+  background: var(--headerText);
 }
 
-.navigation a {
-  text-decoration: none; /*Gets rid of the underline in the links*/
-  display: block;
-  padding: 0px 8px 0px 8px;
-  margin-right: 7px;
-  color: var(--headerText);
-  border-bottom: 2px solid var(--headerText);
-  position: relative;
-  top: -5px;
+header li {
+  list-style: none; /*Gets rid of bulletpoints on links*/
+  display: inline-block; /*Places links in a row*/
+  padding: 0 10px;
+  border-bottom: 3px solid var(--headerText);
 }
-
-.navigation a:hover {
-  background: slategray;
-}
-
-.navigation li:last-of-type a {
-  margin-right: 50px;
-}
-
-
-
-/*For large screen size*/
 
 .navigation {
-  display: flex;
-  flex-flow: row wrap; 
-  list-style-type: none; /*Get rid of bullet points*/
-  justify-content: flex-end; /*Push the links to the far right*/
-  align-content: center;
-  width: 75%;
+  margin-right: 50px; /*Used to create space to right of links to resemble mock-up*/
 }
 
-/*For medium screen size*/
+header a {
+  text-decoration: none; /*Gets rid of the link underline*/
+  color: var(--headerText);
+  /*transition: all 0.3s ease 0s;*/
+}
 
-/*For small screen size*/
+header a:hover {
+  color: rgb(9, 166, 166)
+}
 
 /*HERO BANNER
 ==============*/

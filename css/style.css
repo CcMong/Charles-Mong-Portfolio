@@ -1,8 +1,5 @@
-/*GENERAL
-===========*/
-
 * {
-  box-sizing: border-box; /*To keep width to 100% without overrunning*/
+  box-sizing: border-box;
 }
 
 body {
@@ -24,86 +21,3 @@ h6 {
 p {
   margin: 0;
 }
-
-/*Colour variables defined*/
-
-:root {
-  --backgrColour: darkslategray;
-  --headerText: cyan;
-}
-
-/*HEADER AND NAVIGATION BAR
-============================*/
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; /*Vertically aligns*/
-  /*padding: 10px 50px;*/
-  box-shadow: 0 1px 8px #ddd;
-  background: var(--backgrColour);
-}
-
-#nav-heading {
-  margin-right: auto; /*Moves the heading to the left*/
-  font-size: 2em;
-  padding: 0 10px 0 50px;
-  color: var(--backgrColour);
-  background: var(--headerText);
-}
-
-header li {
-  list-style: none; /*Gets rid of bulletpoints on links*/
-  display: inline-block; /*Places links in a row*/
-  padding: 0 10px;
-  border-bottom: 3px solid var(--headerText);
-}
-
-.navigation {
-  margin-right: 50px; /*Used to create space to right of links to resemble mock-up*/
-}
-
-header a {
-  text-decoration: none; /*Gets rid of the link underline*/
-  color: var(--headerText);
-  /*transition: all 0.3s ease 0s;*/
-}
-
-header a:hover {
-  color: rgb(9, 166, 166)
-}
-
-/*HERO BANNER
-==============*/
-
-.hero-banner img {
-  height: 200px;
-  width: auto;
-  background-image: cover;
-}
-
-#hero-image {
-  width:max-content;
-}
-
-h2 {
-  border: 1px solid purple;
-  display: inline;
-}
-
-#subtitle {
-  color: var(--backgrColour);
-  background-color: var(--headerText);
-  padding: 10px;
-  font-size: 20px;
-  position: relative;
-  top: -50px;
-  left: 0px;
-  opacity: 0.9;
-}
-
-span {
-  color: silver;
-}
-
-

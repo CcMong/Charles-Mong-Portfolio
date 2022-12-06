@@ -18,25 +18,22 @@ body {
   --whiteColor: white;
 }
 
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
 /*MAIN CONTENT
 ===============*/
 
 /*Will begin by creating the mobile layout*/
+
+main, section, aside {
+  margin: 0;
+  padding: 10px; 
+  color: var(--backgrColour);
+}
+
+main {
+  background: var(--whiteColor);
+}
+
+
 
 
 

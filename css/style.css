@@ -87,6 +87,29 @@ main {
   background: var(--whiteColor);
 }
 
+/*Styling for Sidebars and Content
+-----------------------------------*/
+
+/*Next, we will create the medium device width layout. Everything stacks normally except for sidebars beside content.
+So, will use flexbox for this two-column layout, and use a media query to turn flex on when device width is 768px and above.*/
+
+@media screen and (min-width: 768px) {
+  .flex-container {
+      display: flex;
+  }
+}
+
+.sidebar {
+  flex: 0 1 200px; /*sidebar fixed 200px width*/ 
+  text-align: right;
+  border-right: 2px solid var(--backgrColour);
+  margin: 10px;
+} 
+
+.content {
+  flex: 1; /*Basically flex-grow, flex-shrink and flex-basis all set to 1*/
+}
+
 
 
 

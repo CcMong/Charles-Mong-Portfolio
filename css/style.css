@@ -110,6 +110,14 @@ So, will use flexbox for this two-column layout, and use a media query to turn f
   flex: 1; /*Basically flex-grow, flex-shrink and flex-basis all set to 1*/
 }
 
+/*Next is to add styles for desktop width. I want to set a max-width for the main content part. This will limit the width of the sidebar and content divs, and make the site readable even on ultrawide monitors*/
+
+/*Create a class which we will add to the flex-container wrapper that will impose the max width of 1024px/64rem, and center the container on widths above 1024px*/
+
+.width-wrap {
+  max-width: 64rem;
+  margin: auto;
+}
 
 
 

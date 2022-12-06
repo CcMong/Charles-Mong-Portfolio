@@ -18,23 +18,8 @@ body {
   --whiteColor: white;
 }
 
-/*MAIN CONTENT
-===============*/
-
-/*Will begin by creating the mobile layout*/
-
-main, section, aside {
-  margin: 0;
-  padding: 10px; 
-  color: var(--backgrColour);
-}
-
-main {
-  background: var(--whiteColor);
-}
-
-/*Header and nav bar
----------------------*/
+/*HEADER AND NAV BAR
+=====================*/
 
 .header {
   display: flex;
@@ -72,8 +57,8 @@ header a:hover {
   color: rgb(163, 108, 5);
 }
 
-/*Hero Banner Image
---------------------*/
+/*HERO BANNER IMAGE
+====================*/
 
 .hero {
   background: var(--headerText);
@@ -86,6 +71,23 @@ header a:hover {
   position: relative;
   height: 13em;
 }
+
+/*MAIN CONTENT
+===============*/
+
+/*Will begin by creating the mobile layout*/
+
+main, section, aside {
+  margin: 0;
+  padding: 10px; 
+  color: var(--backgrColour);
+}
+
+main {
+  background: var(--whiteColor);
+}
+
+
 
 
 

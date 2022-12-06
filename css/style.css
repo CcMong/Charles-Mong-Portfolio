@@ -10,6 +10,10 @@ body {
   line-height: 1.5;
 }
 
+p {
+  text-align: justify;
+}
+
 /*Colour variables defined*/
 
 :root {
@@ -149,6 +153,30 @@ So, will use flexbox for this two-column layout, and use a media query to turn f
   position: relative;
 }
 
+h3 {
+  background: var(--headerText);
+  font-size: 15px;
+  display: inline-block; /*This and the z index make the h3 label overlay the a link*/
+  z-index: 100;
+}
+
+/*For links within the top-row class for the big image: */
+.top-row a {
+  display: block;
+  position: absolute;
+  height: 15em; /*Same height as defined for the grid*/
+  width: 62.5em; /*1200 minus 200px for th sidebar = 1000px ~ 62.5em*/
+}
+
+/*For links within the other images in the grid: */
+
+.small-image a {
+  display: block;
+  position: absolute; 
+  height: 6em;
+  width: 30em;
+}
+
 .first-mid {
   grid-area: first-mid;
   background-image: url(../images/stock-investment-calc.jpg);
@@ -197,14 +225,7 @@ So, will use flexbox for this two-column layout, and use a media query to turn f
   border: 2px solid var(--headerText);
 }
 
-h3 {
-  background: var(--headerText);
-  font-size: 15px;
-}
 
-p {
-  text-align: justify;
-}
 
 
 

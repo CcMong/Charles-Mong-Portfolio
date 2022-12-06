@@ -33,7 +33,24 @@ main {
   background: var(--whiteColor);
 }
 
+/*Header and nav bar
+---------------------*/
 
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /*Vertically aligns*/
+  box-shadow: 0 1px 8px #ddd;
+  background: var(--backgrColour);
+}
+
+#nav-heading {
+  margin-right: auto; /*Moves the heading to the left*/
+  font-size: 2em;
+  padding: 0 10px 0 50px;
+  color: var(--whiteColor);
+  background: var(--headerText);
+}
 
 
 

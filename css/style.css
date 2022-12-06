@@ -6,11 +6,19 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
+/*Colour variables defined*/
+
+:root {
+  --backgrColour: darkslategray;
+  --headerText: rgba(255, 157, 0, 0.991);
+  --whiteColor: white;
+}
+
+
 
 h1,
 h2,

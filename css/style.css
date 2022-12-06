@@ -84,7 +84,8 @@ header a:hover {
 
 main,
 section,
-aside {
+aside,
+footer {
   margin: 0;
   padding: 10px; 
   color: var(--backgrColour);
@@ -165,7 +166,7 @@ So, will use flexbox for this two-column layout, and use a media query to turn f
 
 h3 {
   background: var(--headerText);
-  font-size: 18px;
+  font-size: 15px;
   display: inline-block; /*This and the z index make the h3 label overlay the a link used to make the grid images linkable*/
   z-index: 100;
 }

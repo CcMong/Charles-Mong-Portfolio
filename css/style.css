@@ -66,8 +66,13 @@ header li {
 header a {
   text-decoration: none; /*Gets rid of the link underline*/
   color: var(--headerText);
-  /*transition: all 0.3s ease 0s;*/
 }
+
+header a:hover {
+  color: rgb(163, 108, 5);
+}
+
+
 
 
 

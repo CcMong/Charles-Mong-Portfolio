@@ -119,6 +119,93 @@ So, will use flexbox for this two-column layout, and use a media query to turn f
   margin: auto;
 }
 
+/*Work Portfolio Grid
+----------------------*/
+
+/*Next, I will create a grid within the Work Content box*/
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15em 6em 6em;
+  grid-template-areas:
+  "top-row top-row"
+  "first-mid second-mid"
+  "first-bottom second-bottom"
+  ;
+}
+
+/*And then assign the grid areas to the respective classes*/
+
+.top-row {
+  grid-area: top-row;
+  background-image: url(../images/wine-tasting-etiquette_.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.first-mid {
+  grid-area: first-mid;
+  background-image: url(../images/stock-investment-calc.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.second-mid {
+  grid-area: second-mid;
+  background-image: url(../images/jazz-on-demand.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.first-bottom {
+  grid-area: first-bottom;
+  background-image: url(../images/P2P-lending.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.second-bottom {
+  grid-area: second-bottom;
+  background-image: url(../images/farm-produce.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.grid-container > * {
+  border: 2px solid var(--headerText);
+}
+
+h3 {
+  background: var(--headerText);
+  font-size: 15px;
+}
+
+p {
+  text-align: justify;
+}
+
 
 
 

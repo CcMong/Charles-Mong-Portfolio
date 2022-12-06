@@ -52,6 +52,23 @@ main {
   background: var(--headerText);
 }
 
+header li {
+  list-style: none; /*Gets rid of bulletpoints on links*/
+  display: inline-block; /*Places links in a row*/
+  padding: 0 10px;
+  border-bottom: 3px solid var(--headerText);
+}
+
+.navigation {
+  margin-right: 85px;
+}
+
+header a {
+  text-decoration: none; /*Gets rid of the link underline*/
+  color: var(--headerText);
+  /*transition: all 0.3s ease 0s;*/
+}
+
 
 
 

@@ -41,10 +41,10 @@ The site, linked below, was deployed using GitHub Pages.
 
 The webpage was built to create an optimised user experience for device widths below 768px, from 768px to 1200px, and above 1200px.
 
-[Link to the deployed Portfolio website on GitHub Pages](https://ccmong.github.io/accessibility-and-seo-refactor/)
+[Link to the deployed Portfolio website on GitHub Pages](https://ccmong.github.io/Charles-Mong-Portfolio/)
 
-[Link to the GitHub code repository](https://github.com/CcMong/accessibility-and-seo-refactor)
+[Link to the GitHub code repository](https://github.com/CcMong/Charles-Mong-Portfolio)
   
-![Horiseon Webpage which has a navigation bar, a hero image, and content comprising images and test](assets/images/horiseon-screenshot.png "Horiseon Webpage")
+![Portfolio Webpage which has a navigation bar, a hero image with a photo, and content comprising images and text](./images/images/horiseon-screenshot.png "Horiseon Webpage")
 
 

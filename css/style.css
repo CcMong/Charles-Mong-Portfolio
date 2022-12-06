@@ -67,7 +67,7 @@ header a:hover {
 
 .hero {
   background: var(--headerText);
-  background-image: url(../images/web-dev-hero.JPG);
+  background-image: url("../images/web-dev-hero.JPG");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +82,9 @@ header a:hover {
 
 /*Will begin by creating the mobile layout*/
 
-main, section, aside {
+main,
+section,
+aside {
   margin: 0;
   padding: 10px; 
   color: var(--backgrColour);
@@ -145,7 +147,14 @@ So, will use flexbox for this two-column layout, and use a media query to turn f
 
 .top-row {
   grid-area: top-row;
-  background-image: url(../images/wine-tasting-etiquette_.jpg);
+  background-image: url("../images/wine-tasting-etiquette_.jpg");
+}
+
+.top-row,
+.first-mid,
+.second-mid,
+.first-bottom,
+.second-bottom {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,69 +166,49 @@ So, will use flexbox for this two-column layout, and use a media query to turn f
 h3 {
   background: var(--headerText);
   font-size: 18px;
-  display: inline-block; /*This and the z index make the h3 label overlay the a link*/
+  display: inline-block; /*This and the z index make the h3 label overlay the a link used to make the grid images linkable*/
   z-index: 100;
 }
 
 /*For links within the top-row class for the big image: */
-.top-row a {
+
+.top-row a,
+.small-image a {
   display: block;
   position: absolute;
+}
+.top-row a {
   height: 15em; /*Same height as defined for the grid*/
-  width: 62.5em; /*1200 minus 200px for th sidebar = 1000px ~ 62.5em*/
+  width: 62.5em; /*1200 minus 200px for the sidebar = 1000px ~ 62.5em*/
 }
 
 /*For links within the other images in the grid: */
 
 .small-image a {
-  display: block;
-  position: absolute; 
   height: 6em;
   width: 30em;
 }
 
+/*I have laid these a elements over the grid images to make them clickable, as they are background images and not directly clickable.*/
+
 .first-mid {
   grid-area: first-mid;
-  background-image: url(../images/stock-investment-calc.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  display: flex;
-  position: relative;
+  background-image: url("../images/stock-investment-calc.jpg");
 }
 
 .second-mid {
   grid-area: second-mid;
-  background-image: url(../images/jazz-on-demand.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  display: flex;
-  position: relative;
+  background-image: url("../images/jazz-on-demand.jpg");
 }
 
 .first-bottom {
   grid-area: first-bottom;
   background-image: url("../images/P2P-lending.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  display: flex;
-  position: relative;
 }
 
 .second-bottom {
   grid-area: second-bottom;
-  background-image: url(../images/farm-produce.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  display: flex;
-  position: relative;
+  background-image: url("../images/farm-produce.jpg");
 }
 
 .grid-container > * {
@@ -235,7 +224,7 @@ h3 {
 .footer li {
   list-style: none; /*Gets rid of bulletpoints on links*/
   display: inline-block; /*Places links in a row*/
-  padding: 0 10px;
+  padding: 0 5px;
   border-bottom: 3px solid var(--backgrColour);
   margin: 20px;
 }

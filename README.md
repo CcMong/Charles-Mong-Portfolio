@@ -45,6 +45,15 @@ The webpage was built to create an optimised user experience for device widths b
 
 [Link to the GitHub code repository](https://github.com/CcMong/Charles-Mong-Portfolio)
   
-![Portfolio Webpage which has a navigation bar, a hero image with a photo, and content comprising images and text](./images/images/horiseon-screenshot.png "Horiseon Webpage")
+![Portfolio Webpage which has a navigation bar, a hero image with a photo, and content comprising images and text](./images/portfolio-screenshot.JPG "Charles Mong Portfolio Webpage")
 
+![Portfolio Webpage which has a hero image with a photo, and content comprising images and text](./images/portfolio-screenshot2.JPG "Cropped Portfolio Webpage")
+
+## Licenses
+
+N/A
+
+## Badges
+
+N/A
 

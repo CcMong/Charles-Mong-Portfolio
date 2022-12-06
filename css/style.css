@@ -72,6 +72,22 @@ header a:hover {
   color: rgb(163, 108, 5);
 }
 
+/*Hero Banner Image
+--------------------*/
+
+.hero {
+  background: var(--headerText);
+  background-image: url(../images/web-dev-hero.JPG);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  position: relative;
+  height: 13em;
+}
+
+
 
 
 
